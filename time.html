@@ -1,0 +1,50 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="import" href="import.html">
+	</head>
+<center>
+	<body>
+		<ul>
+  <li><a class="active" href="timecard.html">Home</a></li>
+</ul>
+		<marquee><h1>Check In</h1></marquee><br><br><br><br><br>
+		<div class="div1">
+			
+
+	<form name="form1" action="" method="post">
+
+		<div class="area">Name</div><input type="text" name="t1" id="t1" placeholder="Enter Fullname" >
+		
+		
+			
+		<div class="area">Current Time</div>
+
+		<p id="t3"></p>
+
+		<td><input class="button" type="button" name="b1" value="Check In" onclick="aa();">
+
+		
+	</form>
+    	</div>
+    	<div id="footer">
+<p>&copy 2016–2017 Stay Connected:&nbsp <a href="http://www.facebook.com/">Facebook</a>&nbsp&nbsp|&nbsp&nbsp<a href="http://www.Instagram.com/">Instagram</a></p>
+</div>
+</body>
+</center>
+	<script type="text/javascript">
+		function aa()
+		{
+			var abakada;
+			abakada=new XMLHttpRequest();
+			abakada.open("GET","insert.php?nm="+document.getElementById("t1").value,false);
+			abakada.send(null);
+			
+			alert('Success!');
+			window.location="timecard.html";
+		}
+	document.getElementById("t3").innerHTML= new Date();
+
+
+	</script>
+</html>

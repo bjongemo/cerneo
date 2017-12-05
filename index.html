@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Card</title>
+	<style>.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#footer{
+    height: 70px;
+    width:100%;
+    color:#fff;
+    background-color: #004d40;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+.area {
+  text-align: center;
+  font-size: 3.5em;
+  color: #fff;
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur .75s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
+}
+	</style>
+</head>
+<body align="center" style="background-color:black;"><br><br><br><br><br><br><br><br><br><br><br><br>
+	<form action="timecard.html" method="">
+	<div class="area">⚠ WELCOME ⚠</div>
+	<button class="button" type="submit"><span>CLICK ME! </span></button>
+	    	<div id="footer">
+<p>&copy 2016–2017 Stay Connected:&nbsp <a href="http://www.facebook.com/">Facebook</a>&nbsp&nbsp|&nbsp&nbsp<a href="http://www.Instagram.com/">Instagram</a></p>
+</div>
+</body>
+</html>
